@@ -10,7 +10,7 @@ import Services from "./Pages/Services";
 function App() {
   return (
     <Router>
-      <div className="bg-white dark:bg-gray-900 min-h-screen">
+      <div className="bg-white dark:bg-slate-800 min-h-screen">
         <Navbar />
         <main>
           <section id="home" className="min-h-screen">

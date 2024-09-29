@@ -44,10 +44,10 @@ const Hero = () => {
             can’t wait to help you elevate your digital presence! 💻✨
           </div>
           <div className="mt-4">
-            <button className="px-6 py-2 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-all">
+            <button className="px-6 rounded-lg py-2 bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-500 dark:to-purple-500 hover:bg-gradient-to-r text-white hover:from-indigo-600 hover:to-purple-600 font-bold transition-all border">
               Contact Me
             </button>
-            <button className="ml-4 px-6 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-800 transition-all">
+            <button className="ml-4 px-6 py-2 bg-transparent bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-500 dark:to-purple-500 hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 border text-white font-bold rounded-lg transition-all">
               Portfolio
             </button>
           </div>

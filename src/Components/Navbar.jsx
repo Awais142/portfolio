@@ -36,7 +36,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-teal-600 dark:bg-gray-800 p-4 top-0 left-0 right-0 z-50 sticky">
+    <nav className=" bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-purple-500 dark:to-indigo-500 p-4 top-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Left Section - Logo */}
         <div className="text-white text-2xl font-bold dark:text-gray-200">

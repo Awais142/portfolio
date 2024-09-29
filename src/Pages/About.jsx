@@ -3,15 +3,14 @@ import IconCloud from "../Components/IconCloud";
 
 const About = () => {
   return (
-    <div className="flex flex-col p-8 text-gray-800 dark:text-gray-200">
+    <div className="flex flex-col px-12 py-8 text-gray-800 dark:text-gray-200">
       {/* Centered Heading */}
       <h1 className="text-5xl font-bold mb-8 mx-auto text-center bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-500 dark:to-purple-500 bg-clip-text text-transparent">
         About Me
       </h1>
-
       <div className="flex flex-col lg:flex-row">
         {/* Left Section - Widget */}
-        <div className="lg:w-1/2 p-4 mb-4 lg:mr-4">
+        <div className="lg:w-1/2 lg:mr-4">
           <IconCloud
             iconSlugs={[
               "typescript",
@@ -43,7 +42,7 @@ const About = () => {
         </div>
 
         {/* Right Section - About Me Content */}
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 text-lg my-auto">
           <p className="mb-4">
             Hi, I’m Awais Akbar, a Full Stack Developer with 5 years of
             experience, hailing from Pakistan! I have a passion for building
@@ -60,11 +59,11 @@ const About = () => {
             enjoy crafting seamless user experiences and believe in the power of
             clean, efficient code.
           </p>
-          <p className="mb-4">
+          {/* <p className="mb-4">
             Throughout my career, I’ve worked on a variety of projects, from
             small startups to larger applications, allowing me to refine my
             skills and tackle new challenges.
-          </p>
+          </p> */}
           <p className="mb-4">
             When I'm not coding, you can find me exploring new technologies,
             contributing to open-source projects, participating in hackathons,

@@ -10,7 +10,7 @@ const words = `A passionate Full Stack Developer from Pakistan, ready to bring y
 const Hero = () => {
   return (
     <HeroHighlight>
-      <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto max-h-screen py-8 px-4 mt-0">
+      <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto max-h-screen mt-0">
         {/* Left Section - Text and Buttons */}
         <div className="flex-1 lg:pr-8">
           <motion.h1
@@ -54,14 +54,14 @@ const Hero = () => {
         </div>
 
         {/* Right Section - Image */}
-        <div className="flex-1 mt-8 lg:mt-0 lg:pl-8">
+        <div className="flex-1  mt-8 lg:mt-0 lg:pl-16">
           <motion.img
             src="\src\assets\images\ai-generated-avatars.png" // Update with your image path
             alt="Modern Web Solutions"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="w-full max-w-md mx-auto"
+            className="w-full max-w-md flex items-end"
           />
         </div>
       </div>

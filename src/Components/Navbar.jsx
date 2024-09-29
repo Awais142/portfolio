@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll"; // Import Link from react-scroll
 import { FaSun, FaMoon, FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
@@ -35,44 +36,77 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-teal-600 dark:bg-gray-800 p-4 fixed top-0 left-0 right-0 z-50">
+    <nav className="bg-teal-600 dark:bg-gray-800 p-4 top-0 left-0 right-0 z-50 sticky">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Left Section - Logo */}
         <div className="text-white text-2xl font-bold dark:text-gray-200">
-          <a href="#home">MyLogo</a>
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            className="hover:text-emerald-300 cursor-pointer"
+          >
+            MyLogo
+          </Link>
         </div>
 
         {/* Center Section - Desktop Navigation Links */}
         <ul className="hidden md:flex space-x-8 text-white dark:text-gray-200 text-lg font-medium">
           <li>
-            <a href="#home" className="hover:text-emerald-300">
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              className="hover:text-emerald-300 cursor-pointer"
+            >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#about" className="hover:text-emerald-300">
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="hover:text-emerald-300 cursor-pointer"
+            >
               About Me
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#services" className="hover:text-emerald-300">
+            <Link
+              to="services"
+              smooth={true}
+              duration={500}
+              className="hover:text-emerald-300 cursor-pointer"
+            >
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#projects" className="hover:text-emerald-300">
+            <Link
+              to="portfolio"
+              smooth={true}
+              duration={500}
+              className="hover:text-emerald-300 cursor-pointer"
+            >
               Portfolio
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#contact" className="hover:text-emerald-300">
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="hover:text-emerald-300 cursor-pointer"
+            >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
 
-        {/* Right Section - Theme Toggle */}
+        {/* Right Section - Theme Toggle and Hire Me Button */}
         <div className="flex items-center space-x-4">
+          {/* Dark Mode Toggle */}
           <button
             onClick={toggleDarkMode}
             className="text-white dark:text-gray-200 text-xl"
@@ -80,13 +114,17 @@ const Navbar = () => {
             {darkMode ? <FaSun /> : <FaMoon />}
           </button>
 
-          <a
-            href="#hireme"
-            className="bg-white dark:bg-gray-700 dark:text-gray-200 text-teal-600 py-2 px-6 rounded-full font-semibold hover:bg-emerald-600 hover:text-white transition duration-300 hidden md:block"
+          {/* Hire Me Button */}
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="dark:bg-slate-500 bg-slate-100 text-white font-bold px-4 py-2 rounded-full hover:bg-teal-700 dark:hover:bg-slate-600 transition-all cursor-pointer hidden md:block bg-transparent border"
           >
             Hire Me
-          </a>
+          </Link>
 
+          {/* Mobile Menu Toggle */}
           <button
             onClick={toggleMenu}
             className="text-white dark:text-gray-200 md:hidden text-2xl focus:outline-none"
@@ -100,58 +138,66 @@ const Navbar = () => {
       {isMenuOpen && (
         <ul className="md:hidden bg-teal-600 dark:bg-gray-800 text-white dark:text-gray-200 space-y-4 py-4 text-center">
           <li>
-            <a
-              href="#home"
-              className="hover:text-emerald-300"
-              onClick={toggleMenu}
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              className="hover:text-emerald-300 cursor-pointer"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#about"
-              className="hover:text-emerald-300"
-              onClick={toggleMenu}
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="hover:text-emerald-300 cursor-pointer"
             >
               About Me
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#services"
-              className="hover:text-emerald-300"
-              onClick={toggleMenu}
+            <Link
+              to="services"
+              smooth={true}
+              duration={500}
+              className="hover:text-emerald-300 cursor-pointer"
             >
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#projects"
-              className="hover:text-emerald-300"
-              onClick={toggleMenu}
+            <Link
+              to="portfolio"
+              smooth={true}
+              duration={500}
+              className="hover:text-emerald-300 cursor-pointer"
             >
               Portfolio
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#contact"
-              className="hover:text-emerald-300"
-              onClick={toggleMenu}
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="hover:text-emerald-300 cursor-pointer"
             >
               Contact
-            </a>
+            </Link>
           </li>
+
+          {/* Hire Me Button in Mobile Menu */}
           <li>
-            <a
-              href="#hireme"
-              className="bg-white dark:bg-gray-700 dark:text-gray-200 text-teal-600 py-2 px-6 rounded-full font-semibold hover:bg-emerald-600 hover:text-white transition duration-300"
-              onClick={toggleMenu}
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="bg-slate-500 text-white px-4 py-2 rounded-lg hover:bg-emerald-600 transition-all cursor-pointer"
             >
               Hire Me
-            </a>
+            </Link>
           </li>
         </ul>
       )}

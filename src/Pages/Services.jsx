@@ -51,11 +51,6 @@ export default function ServicesSection() {
         "Crafting responsive websites and web apps with the latest technologies.",
     },
     {
-      title: "UI/UX Design",
-      description:
-        "Creating visually stunning and user-friendly interfaces tailored to client needs.",
-    },
-    {
       title: "E-commerce Solutions",
       description:
         "Building scalable and secure online stores optimized for user experience.",
@@ -72,6 +67,11 @@ export default function ServicesSection() {
     },
     {
       title: "Web Scrapping",
+      description:
+        "Delivering fast and efficient mobile apps across iOS and Android platforms.",
+    },
+    {
+      title: "UI/UX Design",
       description:
         "Delivering fast and efficient mobile apps across iOS and Android platforms.",
     },

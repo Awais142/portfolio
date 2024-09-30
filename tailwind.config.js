@@ -8,14 +8,14 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   darkMode: "class", // Enable dark mode using the "class" strategy
   theme: {
     extend: {
       animation: {
-        "meteor-effect": "meteor 5s linear infinite", // Adding custom animation
+        "meteor-effect": "meteor 5s linear infinite", // Existing custom animation
+        shine: "shine var(--duration) infinite linear", // New shine animation
       },
       keyframes: {
         meteor: {
@@ -26,10 +26,21 @@ module.exports = {
             opacity: "0",
           },
         },
+        shine: {
+          "0%": {
+            "background-position": "0% 0%",
+          },
+          "50%": {
+            "background-position": "100% 100%",
+          },
+          to: {
+            "background-position": "0% 0%",
+          },
+        },
       },
     },
   },
-  plugins: [addVariablesForColors], // Using the plugin to add CSS variables for colors
+  plugins: [addVariablesForColors], // Custom plugin for color variables
 };
 
 // This plugin adds each Tailwind color as a global CSS variable (e.g., var(--gray-200)).
@@ -40,6 +51,6 @@ function addVariablesForColors({ addBase, theme }) {
   );
 
   addBase({
-    ":root": newVars, // Defining the CSS variables
+    ":root": newVars, // Define the CSS variables for colors
   });
 }

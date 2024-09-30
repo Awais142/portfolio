@@ -1,51 +1,16 @@
 import React from "react";
 import ShineBorder from "../Components/ui/shineBorder";
+import projects from "../lib/projects";
 
 // Array of projects with image URLs
-const projects = [
-  {
-    title: "Project 1",
-    description: "A responsive website built using React.",
-    skills: ["React", "CSS", "JavaScript"],
-    image: "/images/project1.png",
-  },
-  {
-    title: "Project 2",
-    description: "A Node.js API for managing e-commerce products.",
-    skills: ["Node.js", "Express", "MongoDB"],
-    image: "/images/project2.png",
-  },
-  {
-    title: "Project 3",
-    description: "A mobile app for task management.",
-    skills: ["React Native", "Firebase"],
-    image: "/images/project3.png",
-  },
-  {
-    title: "Project 4",
-    description: "An automation tool for generating reports.",
-    skills: ["Python", "Automation", "PostgreSQL"],
-    image: "/images/project4.png",
-  },
-  {
-    title: "Project 5",
-    description: "A chat application with real-time messaging.",
-    skills: ["Socket.io", "Node.js", "React"],
-    image: "/images/project5.png",
-  },
-  {
-    title: "Project 6",
-    description: "A portfolio website built with Next.js.",
-    skills: ["Next.js", "Tailwind CSS"],
-    image: "/images/project6.png",
-  },
-];
 
 const Projects = () => {
   return (
     <div className="relative text-gray-800 dark:text-gray-200 p-8">
       <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-slate-200 to-gray-200 transform scale-[0.80] rounded-full blur-3xl"></div>
-      <h1 className="text-4xl font-bold mb-8 text-center">Projects</h1>
+      <h1 className="text-5xl font-bold mb-12 mx-auto text-center bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-500 dark:to-purple-500 bg-clip-text text-transparent">
+        Projects
+      </h1>
       <div className="flex justify-center flex-wrap gap-8">
         {projects.map((project, index) => (
           <ShineBorder

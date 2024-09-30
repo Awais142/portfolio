@@ -10,7 +10,7 @@ const words = `A passionate Full Stack Developer from Pakistan, ready to bring y
 const Hero = () => {
   return (
     <HeroHighlight>
-      <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto max-h-screen mt-0">
+      <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto max-h-screen mt-64 p-8 md:p-0 md:mt-0 ">
         {/* Left Section - Text and Buttons */}
         <div className="flex-1 lg:pr-8">
           <motion.h1
@@ -43,7 +43,7 @@ const Hero = () => {
             also feel great to use. Let’s team up and bring your ideas to life—I
             can’t wait to help you elevate your digital presence! 💻✨
           </div>
-          <div className="mt-4">
+          <div className="mt-4 mx-auto">
             <button className="px-6 rounded-lg py-2 bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-500 dark:to-purple-500 hover:bg-gradient-to-r text-white hover:from-indigo-600 hover:to-purple-600 font-bold transition-all border">
               Contact Me
             </button>

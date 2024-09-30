@@ -153,7 +153,7 @@ const About = () => {
 
   return (
     <div className="flex flex-col px-12 py-8 text-gray-800 dark:text-gray-200">
-      <h1 className="text-5xl font-bold mb-8 mx-auto text-center bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-500 dark:to-purple-500 bg-clip-text text-transparent">
+      <h1 className="text-5xl font-bold mb-12 mx-auto text-center bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-500 dark:to-purple-500 bg-clip-text text-transparent">
         About Me
       </h1>
 

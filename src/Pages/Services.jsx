@@ -79,7 +79,7 @@ export default function ServicesSection() {
 
   return (
     <div className="py-8 bg-white dark:bg-slate-800">
-      <h1 className="text-5xl font-bold mb-8 mx-auto text-center bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-500 dark:to-purple-500 bg-clip-text text-transparent">
+      <h1 className="text-5xl font-bold mb-12 mx-auto text-center bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-500 dark:to-purple-500 bg-clip-text text-transparent">
         Services
       </h1>
 

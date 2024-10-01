@@ -36,10 +36,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-purple-500 dark:to-indigo-500 p-4 top-0 left-0 right-0 z-50 sticky">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <nav className=" bg-gradient-to-r from-slate-100 to-slate-100 dark:from-gray-700 dark:to-slate-800 p-4 top-0 left-0 right-0 z-50 sticky ">
+      <div className="max-w-7xl mx-auto flex items-center justify-between bg-transparent">
         {/* Left Section - Logo */}
-        <div className="text-white text-2xl font-bold dark:text-gray-200">
+        <div className="text-black text-2xl font-bold dark:text-gray-200">
           <Link
             to="home"
             smooth={true}
@@ -51,13 +51,13 @@ const Navbar = () => {
         </div>
 
         {/* Center Section - Desktop Navigation Links */}
-        <ul className="hidden md:flex space-x-8 text-white dark:text-gray-200 text-lg font-medium">
+        <ul className="hidden md:flex space-x-8 text-black  dark:text-white text-lg font-medium">
           <li>
             <Link
               to="home"
               smooth={true}
               duration={500}
-              className="hover:text-emerald-300 cursor-pointer"
+              className="hover:underline cursor-pointer hover:underline-offset-4"
             >
               Home
             </Link>
@@ -67,7 +67,7 @@ const Navbar = () => {
               to="about"
               smooth={true}
               duration={500}
-              className="hover:text-emerald-300 cursor-pointer"
+              className="hover:underline cursor-pointer hover:underline-offset-4"
             >
               About Me
             </Link>
@@ -77,7 +77,7 @@ const Navbar = () => {
               to="services"
               smooth={true}
               duration={500}
-              className="hover:text-emerald-300 cursor-pointer"
+              className="hover:underline cursor-pointer hover:underline-offset-4"
             >
               Services
             </Link>
@@ -87,7 +87,7 @@ const Navbar = () => {
               to="portfolio"
               smooth={true}
               duration={500}
-              className="hover:text-emerald-300 cursor-pointer"
+              className="hover:underline cursor-pointer hover:underline-offset-4"
             >
               Portfolio
             </Link>
@@ -97,7 +97,7 @@ const Navbar = () => {
               to="contact"
               smooth={true}
               duration={500}
-              className="hover:text-emerald-300 cursor-pointer"
+              className="hover:underline cursor-pointer hover:underline-offset-4"
             >
               Contact
             </Link>
@@ -109,7 +109,7 @@ const Navbar = () => {
           {/* Dark Mode Toggle */}
           <button
             onClick={toggleDarkMode}
-            className="text-white dark:text-gray-200 text-xl"
+            className="text-black dark:text-gray-200 text-xl"
           >
             {darkMode ? <FaSun /> : <FaMoon />}
           </button>
@@ -119,7 +119,7 @@ const Navbar = () => {
             to="contact"
             smooth={true}
             duration={500}
-            className="dark:bg-slate-500 bg-slate-100 text-white font-bold px-4 py-2 rounded-full hover:bg-teal-700 dark:hover:bg-slate-600 transition-all cursor-pointer hidden md:block bg-transparent border"
+            className="dark:bg-slate-500 bg-slate-100 dark:text-white text-black font-bold px-4 py-2 rounded-full hover:bg-gray-300 dark:hover:bg-slate-600 transition-all cursor-pointer hidden md:block bg-transparent border border-black dark:border-white"
           >
             Hire Me
           </Link>

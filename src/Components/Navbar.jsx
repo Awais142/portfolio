@@ -36,7 +36,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-purple-500 dark:to-indigo-500 p-4 top-0 left-0 right-0 z-50">
+    <nav className=" bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-purple-500 dark:to-indigo-500 p-4 top-0 left-0 right-0 z-50 sticky">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Left Section - Logo */}
         <div className="text-white text-2xl font-bold dark:text-gray-200">
@@ -105,7 +105,7 @@ const Navbar = () => {
         </ul>
 
         {/* Right Section - Theme Toggle and Hire Me Button */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 z-50">
           {/* Dark Mode Toggle */}
           <button
             onClick={toggleDarkMode}
@@ -127,7 +127,7 @@ const Navbar = () => {
           {/* Mobile Menu Toggle */}
           <button
             onClick={toggleMenu}
-            className="text-white dark:text-gray-200 md:hidden text-2xl focus:outline-none"
+            className="text-white dark:text-gray-200 md:hidden text-2xl focus:outline-none z-50"
           >
             {isMenuOpen ? <FaTimes /> : <FaBars />}
           </button>

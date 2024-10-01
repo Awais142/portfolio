@@ -10,7 +10,7 @@ const words = `A passionate Full Stack Developer from Pakistan, ready to bring y
 const Hero = () => {
   return (
     <HeroHighlight>
-      <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto max-h-screen mt-64 p-8 md:p-0 md:mt-0 ">
+      <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto max-h-screen mt-64 p-8 lg:p-0 lg:mt-0 ">
         {/* Left Section - Text and Buttons */}
         <div className="flex-1 lg:pr-8">
           <motion.h1
@@ -26,24 +26,24 @@ const Hero = () => {
               duration: 0.5,
               ease: [0.4, 0.0, 0.2, 1],
             }}
-            className="text-xl md:text-xl lg:text-5xl font-bold text-black dark:text-white leading-relaxed lg:leading-snug"
+            className="text-2xl md:text-xl lg:text-4xl font-bold text-black dark:text-white leading-relaxed lg:leading-snug"
           >
             👋 Hi <br />
-            <Highlight className="text-black dark:text-white">
+            <Highlight className="text-black dark:text-white text-4xl">
               I'm Awais Akbar.
             </Highlight>
           </motion.h1>
           <TextGenerateEffect words={words} />
           {/* Buttons (Optional) */}
 
-          <div className="p-container font-medium mt-2 text-black dark:text-white">
+          {/* <div className="p-container font-medium mt-2 text-black dark:text-white">
             I genuinely love creating smooth and enjoyable user experiences,
             paying attention to the little things that make a big difference. I
             specialize in building web applications that not only work well but
             also feel great to use. Let’s team up and bring your ideas to life—I
             can’t wait to help you elevate your digital presence! 💻✨
-          </div>
-          <div className="mt-4 mx-auto">
+          </div> */}
+          <div className="mt-12 mx-auto flex gap-8 ">
             <button className="px-6 rounded-lg py-2 bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-500 dark:to-purple-500 hover:bg-gradient-to-r text-white hover:from-indigo-600 hover:to-purple-600 font-bold transition-all border">
               Contact Me
             </button>

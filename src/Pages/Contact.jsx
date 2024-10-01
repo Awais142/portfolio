@@ -95,7 +95,7 @@ export function ContactForm() {
               />
             </LabelInputContainer>
             <button
-              className="bg-gradient-to-br from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset]"
+              className="bg-gradient-to-br from-gray-700 dark:from-zinc-900 dark:to-zinc-700 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset]"
               type="submit"
             >
               Send Message

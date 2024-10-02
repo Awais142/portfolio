@@ -15,13 +15,13 @@ const Projects = () => {
         {projects.map((project, index) => (
           <ShineBorder
             key={index}
-            className="relative flex flex-col items-center justify-between p-10 rounded-lg bg-slate-100 dark:bg-gray-900 hover:scale-105 transition-transform duration-300 shadow-lg w-full max-w-xs h-full"
+            className="relative flex flex-col items-center justify-between p-8 cursor-pointer rounded-lg bg-slate-100 dark:bg-gray-900 hover:scale-105 transition-transform duration-300 shadow-lg w-full max-w-xs h-full"
             color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
           >
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-40 object-cover rounded-md mb-4"
+              className="w-full h-60 object-fit rounded-md mb-4"
             />
             <div className="flex-grow text-start">
               <h2 className="text-2xl font-bold mb-2">{project.title}</h2>

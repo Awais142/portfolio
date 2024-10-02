@@ -12,7 +12,7 @@ const Hero = () => {
     <HeroHighlight>
       <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto max-h-screen mt-64 p-8 lg:p-0 lg:mt-0 ">
         {/* Left Section - Text and Buttons */}
-        <div className="flex-1 lg:pr-8">
+        <div className="flex-1 lg:pr-8 order-2 lg:order-1">
           <motion.h1
             initial={{
               opacity: 0,
@@ -54,7 +54,7 @@ const Hero = () => {
         </div>
 
         {/* Right Section - Image */}
-        <div className="flex-1  mt-8 lg:mt-0 lg:pl-16">
+        <div className="flex-1  mt-8 lg:mt-0 lg:pl-16 order-1 lg:order-2">
           <motion.img
             src="\src\assets\images\ai-generated-avatars.png" // Update with your image path
             alt="Modern Web Solutions"

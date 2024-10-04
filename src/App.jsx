@@ -10,22 +10,22 @@ import Services from "./Pages/Services";
 function App() {
   return (
     <Router>
-      <div className="bg-white dark:bg-slate-800 min-h-screen">
+      <div className="bg-white dark:bg-slate-800">
         <Navbar />
         <main>
-          <section id="home" className="min-h-screen">
+          <section id="home" className="">
             <Home />
           </section>
-          <section id="about" className="min-h-screen">
+          <section id="about" className="">
             <About />
           </section>
-          <section id="services" className="min-h-screen">
+          <section id="services" className="">
             <Services />
           </section>
-          <section id="portfolio" className="min-h-screen">
+          <section id="portfolio" className="">
             <Portfolio />
           </section>
-          <section id="contact" className="min-h-screen">
+          <section id="contact" className="">
             <Contact />
           </section>
         </main>

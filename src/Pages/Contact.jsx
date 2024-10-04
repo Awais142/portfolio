@@ -17,10 +17,14 @@ export function ContactForm() {
     email: "",
     message: "",
   });
-  const [success, setSuccess] = useState(false); // Add success state for feedback
+  const [errors, setErrors] = useState({}); // Track validation errors
+  const [success, setSuccess] = useState(false); // Success state for feedback
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Validate form data
+    if (!validateForm()) return; // Prevent submission if form is invalid
 
     // EmailJS send function
     emailjs
@@ -33,18 +37,29 @@ export function ContactForm() {
           message: formData.message,
           email: formData.email,
         },
-        "" // Replace with your EmailJS user ID
+        "LY0qVxiXv_Eyu8AHj" // Replace with your EmailJS user ID
       )
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           setSuccess(true);
           setFormData({ fullname: "", email: "", message: "" }); // Clear form after success
+          setErrors({}); // Clear errors after successful submission
         },
         (err) => {
           console.log("FAILED...", err);
         }
       );
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.fullname.trim()) newErrors.fullname = "Full name is required";
+    if (!formData.email.trim()) newErrors.email = "Email is required";
+    if (!formData.message.trim()) newErrors.message = "Message is required";
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0; // Return true if no errors
   };
 
   const handleChange = (e) => {
@@ -54,7 +69,7 @@ export function ContactForm() {
 
   return (
     <div className="max-w-6xl w-full mx-auto rounded-lg p-4 md:p-8 bg-white dark:bg-gray-900 shadow-lg mt-12">
-      <h2 className="text-5xl font-bold mb-8 mx-auto text-center bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-500 dark:to-purple-500 bg-clip-text text-transparent">
+      <h2 className="text-5xl font-bold mb-8 mx-auto text-center bg-gradient-to-r from-orange-300 to-rose-400 dark:from-rose-400 dark:to-orange-300 bg-clip-text text-transparent">
         Get in Touch
       </h2>
 
@@ -117,7 +132,11 @@ export function ContactForm() {
                 value={formData.fullname}
                 onChange={handleChange}
               />
+              {errors.fullname && (
+                <span className="text-red-500 text-sm">{errors.fullname}</span>
+              )}
             </LabelInputContainer>
+
             <LabelInputContainer className="mb-4">
               <Label htmlFor="email">Email Address</Label>
               <Input
@@ -128,7 +147,11 @@ export function ContactForm() {
                 value={formData.email}
                 onChange={handleChange}
               />
+              {errors.email && (
+                <span className="text-red-500 text-sm">{errors.email}</span>
+              )}
             </LabelInputContainer>
+
             <LabelInputContainer className="mb-4">
               <Label htmlFor="message">Message</Label>
               <textarea
@@ -139,9 +162,13 @@ export function ContactForm() {
                 value={formData.message}
                 onChange={handleChange}
               />
+              {errors.message && (
+                <span className="text-red-500 text-sm">{errors.message}</span>
+              )}
             </LabelInputContainer>
+
             <button
-              className="bg-gradient-to-br from-gray-700 dark:from-zinc-600 dark:to-zinc-600 to-neutral-600 block w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset]"
+              className="bg-gradient-to-r from-orange-300 to-rose-500 dark:from-rose-500 dark:to-orange-300 block w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] hover:shadow-lg hover:scale-105 hover:from-rose-300 hover:to-orange-400 active:scale-95 active:shadow-none active:bg-gradient-to-br active:from-orange-800 active:to-rose-700 transition-all duration-200 ease-in-out"
               type="submit"
             >
               Send Message

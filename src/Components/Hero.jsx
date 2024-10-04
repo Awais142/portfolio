@@ -10,9 +10,9 @@ const words = `A passionate Full Stack Developer from Pakistan, ready to bring y
 const Hero = () => {
   return (
     <HeroHighlight>
-      <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto max-h-screen mt-64 p-8 lg:p-0 lg:mt-0 ">
+      <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto max-h-screen p-8 lg:p-0 lg:mt-0 ">
         {/* Left Section - Text and Buttons */}
-        <div className="flex-1 lg:pr-8 order-2 lg:order-1">
+        <div className="flex-1 py-10 order-2 lg:order-1">
           <motion.h1
             initial={{
               opacity: 0,
@@ -26,7 +26,7 @@ const Hero = () => {
               duration: 0.5,
               ease: [0.4, 0.0, 0.2, 1],
             }}
-            className="text-2xl md:text-xl lg:text-4xl font-bold text-black dark:text-white leading-relaxed lg:leading-snug"
+            className="text-4xl md:text-3xl lg:text-4xl font-bold text-black dark:text-white leading-relaxed lg:leading-snug"
           >
             👋 Hi <br />
             <Highlight className="text-black dark:text-white text-4xl">
@@ -44,17 +44,17 @@ const Hero = () => {
             can’t wait to help you elevate your digital presence! 💻✨
           </div> */}
           <div className="mt-12 mx-auto flex gap-8 ">
-            <button className="px-6 rounded-lg py-2 bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-500 dark:to-purple-500 hover:bg-gradient-to-r text-white hover:from-indigo-600 hover:to-purple-600 font-bold transition-all border">
+            <button className="px-6 rounded-lg py-2 bg-gradient-to-r from-orange-300 to-rose-400 dark:from-rose-400 dark:to-orange-300 hover:bg-gradient-to-r text-white hover:from-rose-500 hover:to-orange-400 font-bold transition-all border hover:shadow-lg hover:scale-105 active:scale-95 active:shadow-none active:bg-gradient-to-br active:from-orange-800 active:to-rose-700  duration-200 ease-in-out">
               Contact Me
             </button>
-            <button className="ml-4 px-6 py-2 bg-transparent bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-500 dark:to-purple-500 hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 border text-white font-bold rounded-lg transition-all">
+            <button className="px-6 rounded-lg py-2 bg-gradient-to-r from-orange-300 to-rose-400 dark:from-rose-400 dark:to-orange-300 hover:bg-gradient-to-r text-white hover:from-rose-500 hover:to-orange-400 font-bold transition-all border hover:shadow-lg hover:scale-105 active:scale-95 active:shadow-none active:bg-gradient-to-br active:from-orange-800 active:to-rose-700  duration-200 ease-in-out">
               Portfolio
             </button>
           </div>
         </div>
 
         {/* Right Section - Image */}
-        <div className="flex-1  mt-8 lg:mt-0 lg:pl-16 order-1 lg:order-2">
+        <div className="flex-1  mt-48 lg:mt-5 lg:pl-16 order-1 lg:order-2 ">
           <motion.img
             src="\src\assets\images\ai-generated-avatars.png" // Update with your image path
             alt="Modern Web Solutions"

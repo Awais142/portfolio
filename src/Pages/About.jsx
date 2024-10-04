@@ -26,7 +26,7 @@ const About = () => {
   const tabs = {
     Education: (
       <div className="p-4 text-lg">
-        <h2 className="text-3xl font-bold bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-500 dark:to-purple-500 bg-clip-text text-transparent">
+        <h2 className="text-3xl font-bold bg-gradient-to-l from-orange-300 to-rose-400 dark:from-rose-500 dark:to-orange-300 bg-clip-text text-transparent">
           Education
         </h2>
         <p className="mb-2">
@@ -37,7 +37,7 @@ const About = () => {
     ),
     Experience: (
       <div className="p-4 text-lg">
-        <h2 className="text-3xl font-bold bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-500 dark:to-purple-500 bg-clip-text text-transparent">
+        <h2 className="text-3xl font-bold bg-gradient-to-l from-orange-300 to-rose-400 dark:from-rose-500 dark:to-orange-300 bg-clip-text text-transparent">
           Experience
         </h2>
         <p className="mb-2">Full Stack Developer, Company A (2019 - Present)</p>
@@ -46,7 +46,7 @@ const About = () => {
     ),
     Skills: (
       <div className="p-4 text-lg">
-        <h2 className="text-3xl font-bold bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-500 dark:to-purple-500 bg-clip-text text-transparent">
+        <h2 className="text-3xl font-bold bg-gradient-to-r from-orange-300 to-rose-400 dark:from-rose-500 dark:to-orange-300 bg-clip-text text-transparent">
           Skills
         </h2>
         <p className="mb-4">
@@ -152,8 +152,8 @@ const About = () => {
   };
 
   return (
-    <div className="flex flex-col px-12 py-16 lg:py-0  text-gray-800 dark:text-gray-200">
-      <h1 className="text-5xl font-bold mb-12 mx-auto text-center bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-500 dark:to-purple-500 bg-clip-text text-transparent">
+    <div className="flex flex-col px-12 py-16 lg:py-0  text-gray-800 dark:text-gray-200 mt-32">
+      <h1 className="text-5xl font-bold mb-12 mx-auto text-center bg-gradient-to-r from-orange-300 to-rose-500 dark:from-rose-500 dark:to-orange-300 bg-clip-text text-transparent">
         About Me
       </h1>
 
@@ -191,8 +191,8 @@ const About = () => {
                 key={tab}
                 className={`relative px-4 py-2 transition-all duration-300 ${
                   activeTab === tab
-                    ? "font-semibold text-indigo-500 dark:text-indigo-400 after:absolute after:w-full after:h-1 after:bg-indigo-500 after:bottom-0 after:left-0 after:rounded-lg"
-                    : "text-gray-500 dark:text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400"
+                    ? "font-semibold text-rose-400 dark:text-rose-400 after:absolute after:w-full after:h-1 after:bg-rose-400 after:bottom-0 after:left-0 after:rounded-lg"
+                    : "text-gray-500 dark:text-gray-400 hover:text-rose-500 dark:hover:text-rose-400"
                 }`}
                 onClick={() => setActiveTab(tab)}
               >

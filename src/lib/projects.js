@@ -1,4 +1,9 @@
-// projects.js
+// Import images or use actual URLs if hosted online
+import MernEcommerce from "../assets/images/Mern-Ecommerce.png"; // Example image path
+import FakeStoreApi from "../assets/images/Ecommerce-FakestoreApi.png"; // Example image path
+import JobListing from "../assets/images/jobListingSite.png"; // Example image path
+import ImageSearch from "../assets/images/image-search.png"; // Example image path
+
 const projects = [
   {
     title: "MERN E-Commerce Web App",
@@ -11,13 +16,17 @@ const projects = [
       "Tailwind",
       "JavaScript",
     ],
-    image: "src/assets/images/Mern-Ecommerce.png",
+    image: MernEcommerce,
+    images: [MernEcommerce],
+    type: "fullstack", // Full-stack app
   },
   {
     title: "Fake Store Api With React",
     description: "A Node.js API for managing e-commerce products.",
     skills: ["React", "Tailwind", "Javascript", "JSON", "API"],
-    image: "src/assets/images/Ecommerce-FakestoreApi.png",
+    image: FakeStoreApi,
+    images: [FakeStoreApi],
+    type: "api", // API-based project
   },
   {
     title: "MERN Stack Job Search Portal",
@@ -30,25 +39,33 @@ const projects = [
       "Tailwind",
       "JavaScript",
     ],
-    image: "src/assets/images/jobListingSite.png",
+    image: JobListing,
+    images: [JobListing],
+    type: "fullstack", // Full-stack app
   },
   {
     title: "Image Search App React",
     description: "Image Search App using React and Unsplash Api",
     skills: ["Unsplash Api", "Tailwind", "React"],
-    image: "src/assets/images/image-search.png",
+    image: ImageSearch,
+    images: [ImageSearch],
+    type: "frontend", // Front-end app
   },
   {
-    title: "Project 5",
+    title: "Real-time Chat Application",
     description: "A chat application with real-time messaging.",
     skills: ["Socket.io", "Node.js", "React"],
-    image: "/images/project5.png",
+    image: "",
+    images: [],
+    type: "fullstack", // Full-stack app
   },
   {
-    title: "Project 6",
+    title: "Next.js Portfolio Website",
     description: "A portfolio website built with Next.js.",
     skills: ["Next.js", "Tailwind CSS"],
-    image: "/images/project6.png",
+    image: "",
+    images: [],
+    type: "frontend", // Front-end app
   },
 ];
 

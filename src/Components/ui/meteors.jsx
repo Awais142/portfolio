@@ -10,8 +10,8 @@ export const Meteors = ({ number, className }) => {
           key={"meteor" + idx}
           className={cn(
             // For light mode use indigo-500 and blue-500, for dark mode keep the slate-500
-            "animate-meteor-effect absolute top-1/2 left-1/2 h-0.5 w-0.5 rounded-[9999px] bg-purple-500 dark:bg-slate-500 shadow-[0_0_0_1px_#ffffff10] rotate-[215deg]",
-            "before:content-[''] before:absolute before:top-1/2 before:transform before:-translate-y-[50%] before:w-[50px] before:h-[1px] before:bg-gradient-to-r before:from-indigo-500 before:to-purple-500 dark:before:from-slate-500 dark:before:to-transparent",
+            "animate-meteor-effect absolute top-1/2 left-1/2 h-0.5 w-0.5 rounded-[9999px] bg-rose-400 dark:bg-slate-500 shadow-[0_0_0_1px_#ffffff10] rotate-[215deg]",
+            "before:content-[''] before:absolute before:top-1/2 before:transform before:-translate-y-[50%] before:w-[50px] before:h-[1px] before:bg-gradient-to-r before:from-orange-300 before:to-rose-400 dark:before:from-slate-500 dark:before:to-transparent",
             className
           )}
           style={{

@@ -4,7 +4,7 @@ import { Meteors } from "../Components/ui/meteors";
 export function ServiceCard({ title, description }) {
   return (
     <div className="w-full relative max-w-xs">
-      <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-indigo-500 transform scale-[0.80] rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-orange-300 to-rose-400 transform scale-[0.80] rounded-full blur-3xl"></div>
 
       <div className="relative bg-slate-100 dark:bg-gray-900 border flex-1 border-gray-800 dark:border-gray-800 px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start hover:shadow-xl hover:cursor-pointer">
         <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
@@ -79,7 +79,7 @@ export default function ServicesSection() {
 
   return (
     <div className="py-8 bg-white dark:bg-slate-800">
-      <h1 className="text-5xl font-bold mb-12 mx-auto text-center bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-500 dark:to-purple-500 bg-clip-text text-transparent">
+      <h1 className="text-5xl font-bold mb-12 mx-auto text-center bg-gradient-to-r from-orange-300 to-rose-400 dark:from-rose-500 dark:to-orange-300 bg-clip-text text-transparent">
         Services
       </h1>
 

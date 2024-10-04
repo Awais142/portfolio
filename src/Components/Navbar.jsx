@@ -57,7 +57,7 @@ const Navbar = () => {
               to="home"
               smooth={true}
               duration={500}
-              className="hover:underline cursor-pointer hover:underline-offset-4"
+              className="hover:underline cursor-pointer hover:underline-offset-4 hover:text-rose-400"
             >
               Home
             </Link>
@@ -67,7 +67,7 @@ const Navbar = () => {
               to="about"
               smooth={true}
               duration={500}
-              className="hover:underline cursor-pointer hover:underline-offset-4"
+              className="hover:underline cursor-pointer hover:underline-offset-4 hover:text-rose-400"
             >
               About Me
             </Link>
@@ -77,7 +77,7 @@ const Navbar = () => {
               to="services"
               smooth={true}
               duration={500}
-              className="hover:underline cursor-pointer hover:underline-offset-4"
+              className="hover:underline cursor-pointer hover:underline-offset-4 hover:text-rose-400"
             >
               Services
             </Link>
@@ -87,7 +87,7 @@ const Navbar = () => {
               to="portfolio"
               smooth={true}
               duration={500}
-              className="hover:underline cursor-pointer hover:underline-offset-4"
+              className="hover:underline cursor-pointer hover:underline-offset-4 hover:text-rose-400"
             >
               Portfolio
             </Link>
@@ -97,7 +97,7 @@ const Navbar = () => {
               to="contact"
               smooth={true}
               duration={500}
-              className="hover:underline cursor-pointer hover:underline-offset-4"
+              className="hover:underline cursor-pointer hover:underline-offset-4 hover:text-rose-400"
             >
               Contact
             </Link>
@@ -136,7 +136,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <ul className="md:hidden bg-teal-600 dark:bg-gray-800 text-white dark:text-gray-200 space-y-4 py-4 text-center">
+        <ul className="md:hidden bg-rose-400 dark:bg-gray-800 text-white dark:text-gray-200 space-y-4 py-4 text-center">
           <li>
             <Link
               to="home"

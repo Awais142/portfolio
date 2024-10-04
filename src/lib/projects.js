@@ -18,7 +18,7 @@ const projects = [
     ],
     image: MernEcommerce,
     images: [MernEcommerce],
-    type: "fullstack", // Full-stack app
+    type: "FullStack", // Full-stack app
   },
   {
     title: "Fake Store Api With React",
@@ -26,7 +26,7 @@ const projects = [
     skills: ["React", "Tailwind", "Javascript", "JSON", "API"],
     image: FakeStoreApi,
     images: [FakeStoreApi],
-    type: "api", // API-based project
+    type: "Api", // API-based project
   },
   {
     title: "MERN Stack Job Search Portal",
@@ -41,7 +41,7 @@ const projects = [
     ],
     image: JobListing,
     images: [JobListing],
-    type: "fullstack", // Full-stack app
+    type: "FullStack", // Full-stack app
   },
   {
     title: "Image Search App React",
@@ -49,7 +49,7 @@ const projects = [
     skills: ["Unsplash Api", "Tailwind", "React"],
     image: ImageSearch,
     images: [ImageSearch],
-    type: "frontend", // Front-end app
+    type: "Frontend", // Front-end app
   },
   {
     title: "Real-time Chat Application",
@@ -57,7 +57,7 @@ const projects = [
     skills: ["Socket.io", "Node.js", "React"],
     image: "",
     images: [],
-    type: "fullstack", // Full-stack app
+    type: "FullStack", // Full-stack app
   },
   {
     title: "Next.js Portfolio Website",
@@ -65,7 +65,7 @@ const projects = [
     skills: ["Next.js", "Tailwind CSS"],
     image: "",
     images: [],
-    type: "frontend", // Front-end app
+    type: "Frontend", // Front-end app
   },
 ];
 

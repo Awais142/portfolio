@@ -9,27 +9,24 @@ const Projects = () => {
   const [activeTab, setActiveTab] = useState("All");
   const [selectedProject, setSelectedProject] = useState(null); // For modal
   const [showModal, setShowModal] = useState(false);
-
   // Filtered Projects by Tab
   const filteredProjects =
     activeTab === "All"
       ? projects
       : projects.filter((project) =>
-          activeTab === "fullstack"
-            ? project.type === "fullstack"
-            : activeTab === "frontend"
-            ? project.type === "frontend"
-            : activeTab === "api"
-            ? project.type === "api"
+          activeTab === "FullStack"
+            ? project.type === "FullStack"
+            : activeTab === "Frontend"
+            ? project.type === "Frontend"
+            : activeTab === "Api"
+            ? project.type === "Api"
             : true
         );
-
   // Handle Modal open/close
   const openModal = (project) => {
     setSelectedProject(project);
     setShowModal(true);
   };
-
   const closeModal = () => setShowModal(false);
 
   return (
@@ -41,7 +38,7 @@ const Projects = () => {
 
       {/* Tabs */}
       <div className="flex justify-center mb-8">
-        {["All", "fullstack", "frontend", "api"].map((tab) => (
+        {["All", "FullStack", "Frontend", "Api"].map((tab) => (
           <button
             key={tab}
             className={`relative px-4 py-2 rounded-lg mx-4 transition-all duration-300 ease-in-out transform ${
@@ -94,7 +91,6 @@ const Projects = () => {
           </ShineBorder>
         ))}
       </div>
-
       {/* Modal for Learn More */}
       {showModal && selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
@@ -136,5 +132,4 @@ const Projects = () => {
     </div>
   );
 };
-
 export default Projects;

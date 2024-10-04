@@ -158,10 +158,11 @@ export function ContactForm() {
                 id="message"
                 name="message"
                 placeholder="Your message here..."
-                className="border placeholder:text-neutral-400 dark:placeholder:text-neutral-600 rounded-md p-2 w-full h-32 bg-gray-50 dark:bg-zinc-800 dark:text-white focus-visible:ring-0 focus-visible:outline-none"
+                className="border-none placeholder:text-neutral-400 dark:placeholder:text-neutral-600 rounded-md p-2 w-full h-32 bg-gray-50 dark:bg-zinc-800 dark:text-white focus-visible:ring-0 focus-visible:outline-none"
                 value={formData.message}
                 onChange={handleChange}
               />
+
               {errors.message && (
                 <span className="text-red-500 text-sm">{errors.message}</span>
               )}

@@ -17,7 +17,12 @@ const Dock = () => {
       title: "Instagram",
       link: "https://instagram.com",
     },
-    { id: 2, icon: <FaGithub />, title: "Github", link: "https://github.com" },
+    {
+      id: 2,
+      icon: <FaGithub />,
+      title: "Github",
+      link: "https://github.com/Awais142",
+    },
     {
       id: 3,
       icon: <FaDribbble />,
@@ -40,7 +45,7 @@ const Dock = () => {
       id: 6,
       icon: <FaLinkedin />,
       title: "LinkedIn",
-      link: "https://linkedin.com",
+      link: "https://www.linkedin.com/in/awais-akbar-98013a126/",
     },
     {
       id: 7,
@@ -60,10 +65,10 @@ const Dock = () => {
             rel="noopener noreferrer"
             className="relative group flex items-center text-2xl text-black dark:text-white transition-colors duration-300"
           >
-            <span className="absolute left-16 top-1/2 transform -translate-y-1/2 bg-black text-white dark:text-black dark:bg-white text-sm px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span className="absolute left-16 top-1/2 transform -translate-y-1/2 bg-rose-400 text-white dark:text-rose-400 dark:bg-white text-sm px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               {title}
             </span>
-            <span className="text-black dark:text-white rounded-xl hover:scale-125 transition-transform duration-300">
+            <span className="text-black dark:text-white rounded-xl hover:scale-125 hover:text-rose-400 dark:hover:text-rose-400 transition-transform duration-300">
               {React.cloneElement(icon, {
                 className: "text-2xl",
               })}

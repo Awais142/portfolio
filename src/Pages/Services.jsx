@@ -83,12 +83,13 @@ export default function ServicesSection() {
         Services
       </h1>
 
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap justify-center gap-8 w-full">
         {services.map((service, index) => (
           <ServiceCard
             key={index}
             title={service.title}
             description={service.description}
+            className="w-full lg:w-auto"
           />
         ))}
       </div>

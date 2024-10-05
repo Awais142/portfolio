@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "./ui/hero-highlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
-
+import myImage from "../assets/images/my-image.png";
 // Animated SVG Blob
 const Blob = () => {
   return (
@@ -78,7 +78,7 @@ const Hero = () => {
           {/* Blob behind the image */}
           <Blob />
           <motion.img
-            src="src\assets\images\ai-generated-avatars.png" // Update with your image path
+            src={myImage} // Update with your image path
             alt="Modern Web Solutions"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

@@ -7,7 +7,8 @@ import ImageSearch from "../assets/images/image-search.png"; // Example image pa
 const projects = [
   {
     title: "MERN E-Commerce Web App",
-    description: "A responsive website built using React.",
+    description:
+      "I have created this project using the MERN stack, incorporating all essential functionalities of an e-commerce application. Customers can sign up, log in if already registered, browse products, add items to the cart, and mark products as favorites. For non-logged-in users, cart data is stored in local storage, while logged-in users' data is stored in the database. The app features secure authentication, role-based access, and a seamless shopping experience. Admins can create, update, and delete products, as well as manage orders placed by users and update the status of each order.",
     skills: [
       "React",
       "MongoDB",
@@ -20,17 +21,21 @@ const projects = [
     images: [MernEcommerce],
     type: "FullStack", // Full-stack app
   },
+
   {
-    title: "Fake Store Api With React",
-    description: "A Node.js API for managing e-commerce products.",
+    title: "Fake Store API With React",
+    description:
+      "I have created this project using the Fake Store API to simulate an e-commerce application. The Fake Store API provides a collection of products, including details such as pricing, descriptions, and images. This project demonstrates integration with an external API to display and manage products, providing functionality such as adding products to the cart, viewing product details, and filtering through categories. Tailwind CSS was used for styling the front end, and the project leverages React for a dynamic user experience.",
     skills: ["React", "Tailwind", "Javascript", "JSON", "API"],
     image: FakeStoreApi,
     images: [FakeStoreApi],
     type: "Api", // API-based project
   },
+
   {
     title: "MERN Stack Job Search Portal",
-    description: "A mobile app for task management.",
+    description:
+      "I have created this project using the MERN stack, with full functionality for a job search portal. The portal features role-based authentication, where users can either be job seekers or employers. Job seekers can browse job listings, apply for positions, and manage their applications. Employers (companies) can create, update, and delete job postings, as well as manage applicants. Admins have the ability to manage users, job postings, and other platform functionalities, providing a complete job portal experience.",
     skills: [
       "React",
       "MongoDB",
@@ -45,8 +50,9 @@ const projects = [
   },
   {
     title: "Image Search App React",
-    description: "Image Search App using React and Unsplash Api",
-    skills: ["Unsplash Api", "Tailwind", "React"],
+    description:
+      "This is a simple Image Search App built using React and the Unsplash API. Users can search for any topic in the search bar, and the app will fetch and display relevant images through the Unsplash API. The app provides a smooth user experience, with responsive design and fast image rendering, styled using Tailwind CSS.",
+    skills: ["Unsplash API", "Tailwind", "React"],
     image: ImageSearch,
     images: [ImageSearch],
     type: "Frontend", // Front-end app

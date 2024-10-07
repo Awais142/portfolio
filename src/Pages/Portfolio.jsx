@@ -109,7 +109,7 @@ const Projects = () => {
 
       {showModal && selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-3xl relative">
+          <div className="bg-white dark:bg-gray-800 p-10 rounded-lg shadow-lg w-full max-w-3xl h-auto max-h-[90vh] relative overflow-auto">
             <button
               className="absolute top-2 right-2 text-xl font-bold text-red-500"
               onClick={closeModal}

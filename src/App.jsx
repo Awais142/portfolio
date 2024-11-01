@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./Components/Navbar";
+import { Analytics } from "@vercel/analytics/react";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Portfolio from "./Pages/Portfolio";
@@ -28,6 +29,7 @@ function App() {
           <section id="contact" className="">
             <Contact />
           </section>
+          <Analytics />
         </main>
       </div>
     </Router>
